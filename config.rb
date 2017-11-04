@@ -1,6 +1,7 @@
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 activate :directory_indexes
+activate :livereload
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
@@ -13,7 +14,7 @@ end
 #page '/*.json', layout: false
 #page '/*.txt', layout: false
 
-# page '/RSVP.html' , layout: 'layout'
+ page '/RSVP.html' , layout: 'layout'
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
