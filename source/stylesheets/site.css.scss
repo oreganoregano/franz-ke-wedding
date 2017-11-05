@@ -1,12 +1,16 @@
 @import 'variables';
+@import 'header';
 body {
   background-color: $franzke-seafoam;
   color: $franzke-navy;
   font-family: Cantarell, sans-serif;
-  padding: 18vh 1rem;
   text-align: center;
+  margin: 0;
+  line-height: 90px;
 }
-
+h1, h2, h3, h4 {
+  margin: 0;
+}
 a {
   &:focus,
   &:hover {
