@@ -1,0 +1,39 @@
+header{
+  .header{
+    padding: none;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 67vw;
+    background: $franzke-navy;
+    img{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: auto;
+      opacity: 0.4;
+    }
+    .header-text{
+      position: absolute;
+      z-index: 1;
+      color: white;
+      //left: 0;
+      h1{
+        @media screen and (min-width: $break-medium) {
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+      }
+      p{
+        @media screen and (min-width: $break-medium) {
+          margin-left: 10%;
+          margin-right: 10%;
+        }
+      }
+    }
+  }
+}
