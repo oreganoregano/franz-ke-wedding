@@ -10,9 +10,11 @@
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Open+Sans+Condensed:300|Parisienne|Petit+Formal+Script|Pinyon+Script|Tangerine" rel="stylesheet">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
     <%= stylesheet_link_tag "site" %>
+    <link rel="stylesheet" href="/stylesheets/w3.css">
     <%= javascript_include_tag "site" %>
   </head>
   <body>
+    <%= partial "layouts/menu" %>
     <%= yield %>
     <%= partial "layouts/footer" %>
   </body>

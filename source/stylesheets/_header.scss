@@ -8,7 +8,7 @@ header{
     align-items: center;
     position: relative;
     overflow: hidden;
-    min-height: 67vw;
+    min-height: 66.7vw;
     background: $franzke-navy;
     img{
       position: absolute;
@@ -30,7 +30,7 @@ header{
         margin-left: 10%;
         margin-right: 10%;
         font-size: 3em;
-      }
+        }
       }
       p{
         @media screen and (min-width: $break-medium) {
