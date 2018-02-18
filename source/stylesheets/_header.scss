@@ -10,6 +10,9 @@ header{
     overflow: hidden;
     min-height: 66.7vw;
     background: $franzke-navy;
+    @media screen and (min-width: $break-large) {
+      min-height: 94vh;
+    }
     img{
       position: absolute;
       left: 0;
