@@ -3,6 +3,8 @@
 @import 'footer';
 @import 'home';
 @import 'bridal-party';
+@import 'menu';
+@import 'photos';
 
 body {
   background-color: $franzke-barely-seafoam;
@@ -22,8 +24,12 @@ h1{
 //I'll use h2 like h1. there's only one per page and it's at the top most likely
 h2{
   font-size: 3em;
+  font-weight: 800;
   border-bottom-style: solid;
   border-bottom-width: 2px;
+}
+h3{
+  font-size: 2em;
 }
 a {
     text-decoration: none;
@@ -33,15 +39,27 @@ a {
 p{
   font-size: 1.2em;
   @media screen and (min-width: $break-large) {
-    font-size: 1.75em;
+    font-size: 1.5em;
   }
 }
-.container{
+.content-container{
   margin-left: 5%;
   margin-right: 5%;
   @media screen and (min-width: $break-large){
     margin-left: 15%;
     margin-right: 15%;
+  }
+}
+.flexcontainer{
+  display: block;
+  @media (min-width: $break-medium){
+    display: flex;
+  }
+  padding: 20px 0 20px 0;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  &:last-child{
+    border-bottom-style: none;
   }
 }
 
