@@ -5,11 +5,12 @@
 @import 'bridal-party';
 @import 'menu';
 @import 'photos';
+@import 'plan';
 
 body {
   background-color: $franzke-barely-seafoam;
   color: $franzke-navy;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 400;
   text-align: left;
   margin: 0;
@@ -23,12 +24,14 @@ h1{
   }
 }
 h2{
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 3em;
   font-weight: 800;
   border-bottom-style: solid;
   border-bottom-width: 2px;
 }
 h3{
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 2em;
 }
 a {

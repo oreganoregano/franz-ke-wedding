@@ -3,6 +3,8 @@
   background-color: $franzke-navy;
   text-align: center;
   z-index: 100;
+
+
   a {
     float: left;
     display: inline-block;
@@ -10,7 +12,7 @@
     text-align: center;
     padding: 15px;
     &:hover {
-      color: $franzke-seafoam;
+      background-color: $franzke-dark-purple;
     }
   }
 }
