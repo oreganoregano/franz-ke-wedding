@@ -8,18 +8,23 @@ header{
     align-items: center;
     position: relative;
     overflow: hidden;
-    min-height: 66.7vh;
+    min-height: 66.7vw;
     background: $franzke-navy;
-    @media screen and (min-width: $break-large) {
+    @media screen and (min-width: $break-medium) {
       min-height: 66.7vh;
     }
     img{
       position: absolute;
       left: 0;
-      top: -33.3vh;
       width: 100%;
       height: auto;
       opacity: 0.4;
+      @media screen and (min-width: $break-medium) {
+        top: 0;
+      }
+      @media screen and (min-width: $break-large) {
+        top: -25vh;
+      }
     }
     .header-text{
       position: absolute;
