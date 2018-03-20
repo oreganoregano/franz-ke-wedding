@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Cantarell" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Open+Sans+Condensed:300|Parisienne|Petit+Formal+Script|Pinyon+Script|Tangerine" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+    <link href="/stylesheets/site.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/stylesheets/w3.css">
+    <script src="/javascripts/site.js"></script>
+  </head>
+  <body>
+    <header>
+  <div class ="header">
+    <section class="header-text">
+      <h1>
+        photos, baby
+      </h1>
+      <p>
+        here are some photos
+      </p>
+    </section>
+    <img src= "/images/slideshow/bubbles.jpg" />
+  <div>
+</header>
+<div id="menu">
+  <div class="content-container">
+    <a href="/">Home</a>
+    <a href="/bridal-party">Bridal Party</a>
+    <a href="/registry">Registry</a>
+    <a href="/photos">Photos</a>
+  </div>
+</div>
+
+
+  <div class="content-container photos">
+    <h2>
+      Enjoy the photos from our London engagement
+    </h2>
+    <div class="w3-content w3-display-container">
+      <img class="mySlides" src="/images/slideshow/engagementkiss.jpg">
+      <img class="mySlides" src="/images/slideshow/candid-tree.jpg">
+      <img class="mySlides" src="/images/slideshow/bubbles.jpg">
+      <img class="mySlides" src="/images/slideshow/engagementbasket.jpg">
+      <img class="mySlides" src="/images/slideshow/overlooking-water.jpg">
+      <div class="w3-center w3-display-bottommiddle" style="width:90%; padding-bottom: 10px;">
+        <div class="w3-left" onclick="plusDivs(-1)" style="color: #fff">&#10094;</div>
+        <div class="w3-right" onclick="plusDivs(1)" style="color: #fff">&#10095;</div>
+        <span class="w3-badge demo w3-border" onclick="currentDiv(1)" style="height:18px; background-color: transparent;"></span>
+        <span class="w3-badge demo w3-border" onclick="currentDiv(2)" style="height:18px; background-color: transparent;"></span>
+      </div>
+    </div>
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function currentDiv(n) {
+        showDivs(slideIndex = n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+           dots[i].className = dots[i].className.replace(" w3-white", "");
+        }
+        x[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " w3-white";
+      }
+    </script>
+  </div>
+
+    <footer>
+  <h4 class="content-container">Problem? Contact the site developer
+    <a href="http://regan.tech/contact/" >here.</a>
+  </h4>
+</footer>
+
+    <script>
+      window.onscroll = function() {myFunction()};
+
+      var menu = document.getElementById("menu");
+      var sticky = menu.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          menu.classList.add("sticky")
+        } else {
+          menu.classList.remove("sticky");
+        }
+      }
+    </script>
+  </body>
+</html>
