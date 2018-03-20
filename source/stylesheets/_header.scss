@@ -8,15 +8,15 @@ header{
     align-items: center;
     position: relative;
     overflow: hidden;
-    min-height: 66.7vw;
+    min-height: 66.7vh;
     background: $franzke-navy;
     @media screen and (min-width: $break-large) {
-      min-height: 94vh;
+      min-height: 66.7vh;
     }
     img{
       position: absolute;
       left: 0;
-      top: 0;
+      top: -33.3vh;
       width: 100%;
       height: auto;
       opacity: 0.4;
@@ -28,11 +28,12 @@ header{
       color: #fff;
       text-align: center;
       vertical-align: bottom;
+      width: 100%;
       h1{
         @media screen and (min-width: $break-medium) {
-        margin-left: 10%;
-        margin-right: 10%;
-        font-size: 3em;
+          margin-left: 10%;
+          margin-right: 10%;
+          font-size: 3em;
         }
       }
       p{

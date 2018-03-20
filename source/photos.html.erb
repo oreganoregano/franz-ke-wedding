@@ -1,51 +1,36 @@
 <%= partial "layouts/header", locals: {
-  title: 'photos, baby',
-  subtitle: 'here are some photos',
+  title: 'Caitlin & AJ',
+  subtitle: 'Get to know our journey',
   image:'/images/slideshow/bubbles.jpg'
   } %>
-  <div class="content-container photos">
-    <h2>
-      Enjoy the photos from our London engagement
+  <div class="photos">
+    <h2 class="content-container">
+      London engagement
     </h2>
-    <div class="w3-content w3-display-container">
-      <img class="mySlides" src="/images/slideshow/engagementkiss.jpg">
-      <img class="mySlides" src="/images/slideshow/candid-tree.jpg">
-      <img class="mySlides" src="/images/slideshow/bubbles.jpg">
-      <img class="mySlides" src="/images/slideshow/engagementbasket.jpg">
-      <img class="mySlides" src="/images/slideshow/overlooking-water.jpg">
-      <div class="w3-center w3-display-bottommiddle" style="width:90%; padding-bottom: 10px;">
-        <div class="w3-left" onclick="plusDivs(-1)" style="color: #fff">&#10094;</div>
-        <div class="w3-right" onclick="plusDivs(1)" style="color: #fff">&#10095;</div>
-        <span class="w3-badge demo w3-border" onclick="currentDiv(1)" style="height:18px; background-color: transparent;"></span>
-        <span class="w3-badge demo w3-border" onclick="currentDiv(2)" style="height:18px; background-color: transparent;"></span>
-      </div>
-    </div>
+    <iframe id="littlest" src="https://docs.google.com/presentation/d/e/2PACX-1vSaKahWei36K0x61W-16PyPiz-pBpRJfs1-H8P7t2A7EIsH78fgFV7lurSbn1liiG0EPSQzuMmBhKsC/embed?start=false&loop=false&delayms=3000" frameborder="0" width="357" height="229" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <iframe id="little" src="https://docs.google.com/presentation/d/e/2PACX-1vSaKahWei36K0x61W-16PyPiz-pBpRJfs1-H8P7t2A7EIsH78fgFV7lurSbn1liiG0EPSQzuMmBhKsC/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <iframe id="medium" src="https://docs.google.com/presentation/d/e/2PACX-1vSaKahWei36K0x61W-16PyPiz-pBpRJfs1-H8P7t2A7EIsH78fgFV7lurSbn1liiG0EPSQzuMmBhKsC/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <iframe id="large" src="https://docs.google.com/presentation/d/e/2PACX-1vSaKahWei36K0x61W-16PyPiz-pBpRJfs1-H8P7t2A7EIsH78fgFV7lurSbn1liiG0EPSQzuMmBhKsC/embed?start=false&loop=false&delayms=3000" frameborder="0" width="1440" height="839" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <h2 class="content-container">
+      Through the years
+    </h2>
+    <iframe id="littlest-photos" src="https://docs.google.com/presentation/d/e/2PACX-1vSfTWpZn5iw9t4yuQ50keMaENkmsTdhldoJshoiR9Q1Gt1rQPXfgXIfUIEX-PjHAWbStSL7NYCzf8X1/embed?start=false&loop=false&delayms=3000" frameborder="0" width="357" height="230" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <iframe id="little-photos" src="https://docs.google.com/presentation/d/e/2PACX-1vSfTWpZn5iw9t4yuQ50keMaENkmsTdhldoJshoiR9Q1Gt1rQPXfgXIfUIEX-PjHAWbStSL7NYCzf8X1/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <iframe id="medium-photos" src="https://docs.google.com/presentation/d/e/2PACX-1vSfTWpZn5iw9t4yuQ50keMaENkmsTdhldoJshoiR9Q1Gt1rQPXfgXIfUIEX-PjHAWbStSL7NYCzf8X1/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <iframe id="large-photos" src="https://docs.google.com/presentation/d/e/2PACX-1vSfTWpZn5iw9t4yuQ50keMaENkmsTdhldoJshoiR9Q1Gt1rQPXfgXIfUIEX-PjHAWbStSL7NYCzf8X1/embed?start=false&loop=false&delayms=3000" frameborder="0" width="1440" height="839" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
     <script>
-      var slideIndex = 1;
-      showDivs(slideIndex);
-
-      function plusDivs(n) {
-        showDivs(slideIndex += n);
-      }
-
-      function currentDiv(n) {
-        showDivs(slideIndex = n);
-      }
-
-      function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("demo");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length}
-        for (i = 0; i < x.length; i++) {
-           x[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-           dots[i].className = dots[i].className.replace(" w3-white", "");
-        }
-        x[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " w3-white";
+      if (window.innerWidth < 481){
+        document.getElementById("littlest-photos").style.display = "block";
+        document.getElementById("littlest").style.display = "block";
+      } else if (window.innerWidth < 961 && 481 < window.innerWidth) {
+        document.getElementById("little-photos").style.display = "block";
+        document.getElementById("little").style.display = "block";
+      } else if (961 < window.innerWidth && window.innerWidth < 1440){
+        document.getElementById("medium-photos").style.display = "block";
+        document.getElementById("medium").style.display = "block";
+      } else {
+        document.getElementById("large-photos").style.display = "block";
+        document.getElementById("large").style.display = "block";
       }
     </script>
   </div>

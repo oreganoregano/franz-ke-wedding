@@ -10,6 +10,7 @@ body {
   background-color: $franzke-barely-seafoam;
   color: $franzke-navy;
   font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 400;
   text-align: left;
   margin: 0;
 }
@@ -21,7 +22,6 @@ h1{
     font-size: 3em;
   }
 }
-//I'll use h2 like h1. there's only one per page and it's at the top most likely
 h2{
   font-size: 3em;
   font-weight: 800;
