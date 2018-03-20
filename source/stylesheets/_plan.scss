@@ -1,0 +1,12 @@
+.plan{
+  li{
+    font-size: 1.2em;
+  }
+  a{
+    color: $franzke-dark-purple;
+    &:hover{
+      color: white;
+      background-color: $franzke-dark-purple;
+    }
+  }
+}

@@ -8,18 +8,24 @@ header{
     align-items: center;
     position: relative;
     overflow: hidden;
-    min-height: 66.7vw;
+    min-height: 60vw;
     background: $franzke-navy;
-    @media screen and (min-width: $break-large) {
-      min-height: 94vh;
+    @media screen and (min-width: $break-medium) {
+      min-height: 66.7vh;
     }
     img{
       position: absolute;
       left: 0;
-      top: 0;
       width: 100%;
       height: auto;
       opacity: 0.4;
+      top: -10px;
+      @media screen and (min-width: $break-medium) {
+        top: 0;
+      }
+      @media screen and (min-width: $break-large) {
+        top: -25vh;
+      }
     }
     .header-text{
       position: absolute;
@@ -28,11 +34,12 @@ header{
       color: #fff;
       text-align: center;
       vertical-align: bottom;
+      width: 100%;
       h1{
         @media screen and (min-width: $break-medium) {
-        margin-left: 10%;
-        margin-right: 10%;
-        font-size: 3em;
+          margin-left: 10%;
+          margin-right: 10%;
+          font-size: 3em;
         }
       }
       p{
