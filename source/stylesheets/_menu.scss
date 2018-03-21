@@ -1,0 +1,25 @@
+#menu {
+  overflow: hidden;
+  background-color: $franzke-navy;
+  text-align: center;
+  z-index: 100;
+  a {
+    float: left;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    &:hover {
+      background-color: $franzke-dark-purple;
+    }
+  }
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  //padding-top: 60px;
+}
+.content {
+  padding-top: 60px;
+}

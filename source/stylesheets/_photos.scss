@@ -1,0 +1,25 @@
+.photos{
+  img{
+    max-width: 100%;
+    max-height: 100vh;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  iframe{
+    margin: 0 auto;
+    display: none;
+  }
+}
+.w3-left .w3-right{
+  &:hover{cursor: pointer !important;}
+}
+.w3-left{
+  margin-left: 150px;
+}
+.w3-right{
+  margin-right: 150px;
+}
+// .w3-display-container{
+//   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+// }

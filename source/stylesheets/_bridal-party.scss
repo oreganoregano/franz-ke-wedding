@@ -1,0 +1,21 @@
+.bridal-party{
+  margin-bottom: 50px;
+  .crop {
+    max-width: 400px;
+    max-height: 400px;
+    min-width: 100%;
+    @media (min-width: $break-small){
+      min-width: 400px;
+    }
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 0 auto;
+    img {
+      max-width: 400px;
+      height: auto;
+    }
+  }
+  .bio{
+      padding-left: 20px;
+  }
+}

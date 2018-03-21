@@ -5,12 +5,32 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title || "" %></title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Cantarell" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Open+Sans+Condensed:300|Parisienne|Petit+Formal+Script|Pinyon+Script|Tangerine" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
     <%= stylesheet_link_tag "site" %>
+    <link rel="stylesheet" href="/stylesheets/w3.css">
     <%= javascript_include_tag "site" %>
+    <%= favicon_tag '/images/favicon.png' %>
   </head>
   <body>
     <%= yield %>
+    <%= partial "layouts/footer" %>
+    <script>
+      window.onscroll = function() {myFunction()};
+
+      var menu = document.getElementById("menu");
+      var sticky = menu.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          menu.classList.add("sticky")
+        } else {
+          menu.classList.remove("sticky");
+        }
+      }
+    </script>
   </body>
 </html>

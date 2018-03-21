@@ -1,0 +1,36 @@
+<%= partial "layouts/header", locals: {
+  title: 'Caitlin & AJ',
+  subtitle: 'Get to know our journey',
+  image:'/images/slideshow/engagementbasket.jpg'
+  } %>
+  <div class="photos">
+    <h2 class="content-container">
+      London engagement
+    </h2>
+    <iframe id="littlest" src="https://docs.google.com/presentation/d/e/2PACX-1vSaKahWei36K0x61W-16PyPiz-pBpRJfs1-H8P7t2A7EIsH78fgFV7lurSbn1liiG0EPSQzuMmBhKsC/embed?start=false&loop=false&delayms=3000" frameborder="0" width="357" height="229" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <iframe id="little" src="https://docs.google.com/presentation/d/e/2PACX-1vSaKahWei36K0x61W-16PyPiz-pBpRJfs1-H8P7t2A7EIsH78fgFV7lurSbn1liiG0EPSQzuMmBhKsC/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <iframe id="medium" src="https://docs.google.com/presentation/d/e/2PACX-1vSaKahWei36K0x61W-16PyPiz-pBpRJfs1-H8P7t2A7EIsH78fgFV7lurSbn1liiG0EPSQzuMmBhKsC/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <iframe id="large" src="https://docs.google.com/presentation/d/e/2PACX-1vSaKahWei36K0x61W-16PyPiz-pBpRJfs1-H8P7t2A7EIsH78fgFV7lurSbn1liiG0EPSQzuMmBhKsC/embed?start=false&loop=false&delayms=3000" frameborder="0" width="1440" height="839" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <h2 class="content-container">
+      Through the years
+    </h2>
+    <iframe id="littlest-photos" src="https://docs.google.com/presentation/d/e/2PACX-1vSfTWpZn5iw9t4yuQ50keMaENkmsTdhldoJshoiR9Q1Gt1rQPXfgXIfUIEX-PjHAWbStSL7NYCzf8X1/embed?start=false&loop=false&delayms=3000" frameborder="0" width="357" height="230" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <iframe id="little-photos" src="https://docs.google.com/presentation/d/e/2PACX-1vSfTWpZn5iw9t4yuQ50keMaENkmsTdhldoJshoiR9Q1Gt1rQPXfgXIfUIEX-PjHAWbStSL7NYCzf8X1/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <iframe id="medium-photos" src="https://docs.google.com/presentation/d/e/2PACX-1vSfTWpZn5iw9t4yuQ50keMaENkmsTdhldoJshoiR9Q1Gt1rQPXfgXIfUIEX-PjHAWbStSL7NYCzf8X1/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <iframe id="large-photos" src="https://docs.google.com/presentation/d/e/2PACX-1vSfTWpZn5iw9t4yuQ50keMaENkmsTdhldoJshoiR9Q1Gt1rQPXfgXIfUIEX-PjHAWbStSL7NYCzf8X1/embed?start=false&loop=false&delayms=3000" frameborder="0" width="1440" height="839" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <script>
+      if (window.innerWidth < 481){
+        document.getElementById("littlest-photos").style.display = "block";
+        document.getElementById("littlest").style.display = "block";
+      } else if (window.innerWidth < 961 && 481 < window.innerWidth) {
+        document.getElementById("little-photos").style.display = "block";
+        document.getElementById("little").style.display = "block";
+      } else if (961 < window.innerWidth && window.innerWidth < 1440){
+        document.getElementById("medium-photos").style.display = "block";
+        document.getElementById("medium").style.display = "block";
+      } else {
+        document.getElementById("large-photos").style.display = "block";
+        document.getElementById("large").style.display = "block";
+      }
+    </script>
+  </div>
