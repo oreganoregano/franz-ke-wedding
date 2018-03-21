@@ -183,7 +183,8 @@ p {
 
 .content-container {
   margin-left: 5%;
-  margin-right: 5%; }
+  margin-right: 5%;
+  min-height: 120vh; }
   @media screen and (min-width: 70em) {
     .content-container {
       margin-left: 15%;
@@ -201,6 +202,14 @@ p {
       display: flex; } }
   .flexcontainer:last-child {
     border-bottom-style: none; }
+
+.menu-container {
+  margin-left: 5%;
+  margin-right: 5%; }
+  @media screen and (min-width: 70em) {
+    .menu-container {
+      margin-left: 15%;
+      margin-right: 15%; } }
 
 .colors .navy {
   background-color: #031926;
