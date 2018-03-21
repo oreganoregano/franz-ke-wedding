@@ -98,7 +98,6 @@ footer {
   text-align: center;
   z-index: 100; }
   #menu a {
-    float: left;
     display: inline-block;
     color: white;
     text-align: center;
