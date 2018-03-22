@@ -72,7 +72,14 @@ footer {
   .home .stickout-message a {
     color: #6D7193; }
     .home .stickout-message a:hover {
-      color: #545775; }
+      color: #545775;
+      background-color: transparent; }
+.home a {
+  color: #545775;
+  font-weight: 900; }
+  .home a:hover {
+    color: white;
+    background-color: #545775; }
 
 .bridal-party {
   margin-bottom: 50px; }

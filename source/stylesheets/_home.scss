@@ -11,7 +11,16 @@
       color: $franzke-purple;
       &:hover {
         color: $franzke-dark-purple;
+        background-color: transparent;
       }
+    }
+  }
+  a{
+    color: $franzke-dark-purple;
+    font-weight: 900;
+    &:hover {
+      color: white;
+      background-color: $franzke-dark-purple;
     }
   }
 }
