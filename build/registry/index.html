@@ -49,7 +49,7 @@
 </div>
 
 
-
+<div id="page">
   <div class="content-container">
     <p>Your presence is present enough. We appreciate you sharing a long weekend
       with us and taking on the travel and accommodations associated with our celebration.
@@ -61,6 +61,7 @@
     </a>
     <script>!function(e,t,n){var s,a=e.getElementsByTagName(t)[0];e.getElementById(n)||(s=e.createElement(t),s.id=n,s.async=!0,s.src="https://widget.zola.com/js/widget.js",a.parentNode.insertBefore(s,a))}(document,"script","zola-wjs");</script>
   </div>
+</div>
 
     <footer>
   <h4 class="menu-container">
@@ -73,12 +74,15 @@
 
       var menu = document.getElementById("menu");
       var sticky = menu.offsetTop;
+      var page = document.getElementById("page");
 
       function myFunction() {
         if (window.pageYOffset >= sticky) {
-          menu.classList.add("sticky")
+          menu.classList.add("sticky");
+          page.classList.add("sticky-page");
         } else {
           menu.classList.remove("sticky");
+          page.classList.remove("sticky-page");
         }
       }
     </script>

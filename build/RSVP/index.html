@@ -49,7 +49,7 @@
 </div>
 
 
-  <div>
+  <div id="page">
     <script type="text/javascript" src="https://app.rsvpify.com/embed/500081014" scrolling="yes"></script>
     <script type="text/javascript" src="https://app.rsvpify.com/js/iframeResizer.min.js"></script>
     <script type="text/javascript">iFrameResize({autoResize: true,checkOrigin: false,heightCalculationMethod: 'max', enablePublicMethods: true}, "#RSVPifyIFrame");</script>
@@ -66,12 +66,15 @@
 
       var menu = document.getElementById("menu");
       var sticky = menu.offsetTop;
+      var page = document.getElementById("page");
 
       function myFunction() {
         if (window.pageYOffset >= sticky) {
-          menu.classList.add("sticky")
+          menu.classList.add("sticky");
+          page.classList.add("sticky-page");
         } else {
           menu.classList.remove("sticky");
+          page.classList.remove("sticky-page");
         }
       }
     </script>

@@ -53,7 +53,7 @@ header {
 footer {
   background-color: #6D7193;
   color: white;
-  height: 60px;
+  height: 100px;
   width: 100%;
   text-align: center; }
   footer h4 {
@@ -215,6 +215,9 @@ p {
     .menu-container {
       margin-left: 15%;
       margin-right: 15%; } }
+
+.sticky-page {
+  padding-top: 60px; }
 
 .colors .navy {
   background-color: #031926;
