@@ -16,6 +16,17 @@
     }
   }
   .bio{
-      padding-left: 20px;
+    padding-left: 20px;
+  }
+  .parents {
+    h3 {
+      line-height: 10px;
+      text-align: center;
+    }
+  }
+  .right {
+    @media (min-width: $break-medium){
+      padding-left: 60px;
+    }
   }
 }
