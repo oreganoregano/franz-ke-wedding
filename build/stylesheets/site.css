@@ -97,6 +97,12 @@ footer {
       height: auto; }
   .bridal-party .bio {
     padding-left: 20px; }
+  .bridal-party .parents h3 {
+    line-height: 10px;
+    text-align: center; }
+  @media (min-width: 55em) {
+    .bridal-party .right {
+      padding-left: 60px; } }
 
 #menu {
   overflow: hidden;
